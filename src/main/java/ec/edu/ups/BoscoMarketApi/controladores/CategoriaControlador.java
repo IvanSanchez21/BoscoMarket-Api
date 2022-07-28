@@ -26,6 +26,12 @@ public class CategoriaControlador {
         List<Categoria> listaCat = categoriaServicio.findAll();
         return new ResponseEntity<List<Categoria>>(listaCat, HttpStatus.OK);
     }
+    
+    @GetMapping("/prueba")
+    public ResponseEntity<String> mensaje(){
+        String nombre = "Hola plataformas web";
+        return new ResponseEntity<String>(nombre, HttpStatus.OK);
+    }
 
     @GetMapping("{id}/nombre")
     public ResponseEntity<String> getNombreById(@PathVariable Long id){
