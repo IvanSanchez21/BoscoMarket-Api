@@ -29,7 +29,7 @@ public class CategoriaControlador {
     
     @GetMapping("/prueba")
     public ResponseEntity<String> mensaje(){
-        String nombre = "Hola plataformas web";
+        String nombre = "Hola soy Pepito";
         return new ResponseEntity<String>(nombre, HttpStatus.OK);
     }
 
